@@ -16,7 +16,7 @@ RUN apt-get update && apt-get install -y \
 COPY package*.json ./
 # COPY ../sample ./
 # Install dependencies
-# RUN npm install
+RUN npm install
 RUN ls -la
 # Copy the application code
 COPY . .
@@ -24,7 +24,7 @@ COPY . .
 RUN ls -la
 
 # Build the application
-# RUN npm run build
+RUN npm run build
 
 # Stage 2: Production stage
 FROM node:18-slim
