@@ -23,8 +23,6 @@ COPY . .
 
 RUN ls -la
 
-RUN echo "Dummy"
-
 # Build the application
 RUN npm run build
 
