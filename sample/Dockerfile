@@ -6,6 +6,9 @@ WORKDIR /app
 
 # Install system packages (simulates build-time dependencies)
 RUN apt-get update && apt-get install -y \
+    curl \
+    wget \
+    unzip \
     build-essential \
     python3 \
     git \
@@ -51,4 +54,3 @@ ENV NODE_ENV=production
 
 # Command to run the application
 CMD ["node", "dist/index.js"]
-
