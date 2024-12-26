@@ -1,5 +1,5 @@
 # Stage 1: Build stage
-FROM node:18 as builder
+FROM 122610488334.dkr.ecr.ap-southeast-1.amazonaws.com/base-image:latest as builder
 
 # Set working directory
 WORKDIR /app
